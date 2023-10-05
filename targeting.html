@@ -6,7 +6,31 @@
 
     <!-- Inline styles go between style tags -->
     <style>
+    h1{
+        color: red;
+    }
 
+    /* selectors can be combined. Child selector*/
+    form > p{
+        color:green;
+    }
+
+    /* selectors can be combined via direct sibling*/
+    label{
+        font-weight: bolder;
+    }
+    /* General Siblings*/
+    label ~ input{
+        clear:both;
+        display:block;
+    }
+    button{
+        color:salmon;
+        background:blue;
+    }
+    input[type="text"]{
+        background-color: red;
+    }
 
     </style>
 
